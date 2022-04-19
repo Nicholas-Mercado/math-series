@@ -1,7 +1,7 @@
-def ft(n):
+def Fibonacci(n):
   return 1
 
-ft(1)
+
     # """
     # return n! (as it's sometimes written)
     # e.g. factorial(3) = 3 * 2 * 1 = 6
