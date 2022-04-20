@@ -1,15 +1,22 @@
 def Fibonacci(n):
-  return 1
+  
+  if n < 0:
+    print("Cannot compute")
+  elif n == 0:
+    return 0
+  elif n == 1:
+    return 1
+  elif n > 1:
+    return Fibonacci(n-1) + Fibonacci(n-2)
 
-
-    # """
-    # return n! (as it's sometimes written)
-    # e.g. factorial(3) = 3 * 2 * 1 = 6
-    # Note: Normally wouldn't name a package or module this way
-    # but wanted to be really clear about which was which
-    # Bonus: hover your mouse over the function name when importing
-    # """
-    # if n <= 1:
-    #     return 1
-
-    # return n * factorial(n - 1)
+def Lucas(n):
+  
+  if n < 0:
+    print("Cannot compute")
+  elif n == 0:
+    return 0
+  elif n == 1:
+    return 1
+  elif n > 1:
+    return Lucas(n-1) + Lucas(n-2)
+   
