@@ -1,10 +1,23 @@
-def sum_series(n, num=0, num_two=1):
 
-    if num == 0 and num_two == 1:
-        return Fibonacci(n)
-    if num == 1 and num_two == 2:
-        return Lucas(n)
-         
+
+def sum_series(n, arg1=0, arg2=1):
+    """
+    Calls either Default: Fibonacci or Lucas depending on optional parameters
+
+    Parameters:
+    Argument 1 (int): The function or Lucas should return the nth value in the fibonacci series.
+
+    Argument 2-3 (int): Allows for calling of 
+    """
+    
+    if n < 0:
+        return "Cannot compute"
+    elif n == 0:
+        return arg1
+    elif n == 1:
+        return arg2
+    elif n > 1:
+        return sum_series(n-1, arg1, arg2) + sum_series(n-2, arg1, arg2)
 
 
 def Fibonacci(n):

@@ -8,12 +8,10 @@ def test_Lucas_zero():
     assert actual == expected
 
 
-
 def test_Lucas_one():
     actual = Lucas(1)
     expected = 1
     assert actual == expected
-
 
 
 def test_Lucas_two():
@@ -89,22 +87,26 @@ def test_Fibonacci_six():
 
 # edge cases
 
+
 def test_Fibonacci_neg():
     actual = Fibonacci(-3)
     expected = "Cannot compute"
     assert actual == expected
-    
+
+
 def test_Lucas_neg():
     actual = Lucas(-3)
     expected = "Cannot compute"
     assert actual == expected
 
-def test_sum_series():
+
+def test_sum_series_one():
     actual = sum_series(5)
     expected = 5
     assert actual == expected
-    
+
+
 def test_sum_series_two():
-    actual = sum_series(5,1,2)
+    actual = sum_series(5, 2, 1)
     expected = 11
     assert actual == expected
