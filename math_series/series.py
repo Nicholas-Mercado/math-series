@@ -1,3 +1,12 @@
+def sum_series(n, num=0, num_two=1):
+
+    if num == 0 and num_two == 1:
+        return Fibonacci(n)
+    if num == 1 and num_two == 2:
+        return Lucas(n)
+         
+
+
 def Fibonacci(n):
 
     if n < 0:

@@ -1,4 +1,4 @@
-from math_series.series import Fibonacci, Lucas
+from math_series.series import Fibonacci, Lucas, sum_series
 import pytest
 
 
@@ -97,4 +97,14 @@ def test_Fibonacci_neg():
 def test_Lucas_neg():
     actual = Lucas(-3)
     expected = "Cannot compute"
+    assert actual == expected
+
+def test_sum_series():
+    actual = sum_series(5)
+    expected = 5
+    assert actual == expected
+    
+def test_sum_series_two():
+    actual = sum_series(5,1,2)
+    expected = 11
     assert actual == expected
