@@ -5,9 +5,8 @@ def sum_series(n, arg1=0, arg2=1):
     Calls either Default: Fibonacci or Lucas depending on optional parameters
 
     Parameters:
-    Argument 1 (int): The function or Lucas should return the nth value in the fibonacci series.
-
-    Argument 2-3 (int): Allows for calling of 
+    Argument 2-3 (int): (n) = default Fibonacci(), (n,2,1) = invokes Lucas()
+    
     """
     
     if n < 0:
