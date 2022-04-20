@@ -1,7 +1,7 @@
 def Fibonacci(n):
 
     if n < 0:
-        print("Cannot compute")
+        return "Cannot compute"
     elif n == 0:
         return 0
     elif n == 1:
@@ -13,7 +13,7 @@ def Fibonacci(n):
 def Lucas(n):
 
     if n < 0:
-        print("Cannot compute")
+        return "Cannot compute"
     elif n == 0:
         return 2
     elif n == 1:
